@@ -1,3 +1,6 @@
+## PROJECT ONE CHAT IS NOW ON ITS END STAGE SO WE DON'T CONTINUE UPDATING THE APP. BUT THIS REPOSITORY IS AVAILABLE UNTIL THE NEW COMPLETE RENOVATED VERSION OF ONE CHAT NAME NEO CHAT WILL LAUNCH
+
+
 ## Introduction
 
 One-Chat is a real-time chat application that allows users to communicate with each other in a secure and user-friendly environment. This project is built using modern web technologies and is designed to be scalable and easy to use.
