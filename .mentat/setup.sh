@@ -27,6 +27,32 @@ sdkmanager "platform-tools" "platforms;android-34" "build-tools;34.0.0"
 # Create local.properties
 echo "sdk.dir=/opt/android-sdk" > local.properties
 
+# Create minimal google-services.json
+cat > app/google-services.json << 'EOL'
+{
+  "project_info": {
+    "project_number": "000000000000",
+    "project_id": "dummy-project",
+    "storage_bucket": "dummy-project.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:000000000000:android:0000000000000000",
+        "android_client_info": {
+          "package_name": "com.one.onechat"
+        }
+      },
+      "api_key": [
+        {
+          "current_key": "dummy_api_key"
+        }
+      ]
+    }
+  ]
+}
+EOL
+
 # Make gradlew executable and build
 chmod +x ./gradlew
 ./gradlew build --no-daemon
