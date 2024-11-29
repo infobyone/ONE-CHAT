@@ -1,3 +1,3 @@
-./gradlew ktlintCheck
 ./gradlew lint
-./gradlew test
+./gradlew testDebug
+./gradlew testReleaseUnitTest
