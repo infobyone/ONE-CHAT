@@ -7,11 +7,14 @@ export JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
 export PATH=$JAVA_HOME/bin:$PATH
 
 # Install Android SDK
+rm -rf /opt/android-sdk
 mkdir -p /opt/android-sdk/cmdline-tools
 cd /opt/android-sdk/cmdline-tools
 wget https://dl.google.com/android/repository/commandlinetools-linux-10406996_latest.zip
 unzip commandlinetools-linux-10406996_latest.zip
-mv cmdline-tools latest
+mkdir -p latest
+mv cmdline-tools/* latest/
+rm -rf cmdline-tools
 cd -
 
 # Set Android SDK environment variables
